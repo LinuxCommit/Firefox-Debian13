@@ -1,0 +1,15 @@
+How to install Firefox in Linux computers. 
+If you try to just "sudo apt-get install firefox" it'll pop up with a error with the following:
+
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+Package firefox is not available, but is referred to by another package.
+This may mean that the package is missing, has been obsoleted, or
+is only available from another source
+However the following packages replace it:
+  gnome-browser-connector
+
+E: Package 'firefox' has no installation candidate
+
+Easy fix is to instead of doing that, you can instead type "sudo apt-get install firefox-esr", that's the stable version for firefox.
